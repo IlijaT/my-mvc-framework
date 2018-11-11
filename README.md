@@ -1,13 +1,13 @@
-# my-mvc-framework
-Small custom PHP MVC framework (Laravel like) with custom router and basic ORM
+# My-MVC-Framework
+Small custom PHP MVC framework (Laravel like) with custom router and very basic ORM
 
 # Additional Tables Required
 
-CREATE DATABASE mytodo;
+create database mytodo;
 
-USE mytodo;
+use mytodo;
 
-CREATE TABLE IF NOT EXISTS todos (
+create table todos (
 
     id INT AUTO_INCREMENT,
 
@@ -19,10 +19,10 @@ CREATE TABLE IF NOT EXISTS todos (
 
 )  ENGINE=INNODB;
 
-INSERT INTO todos (description, completed) VALUES ('Finish homework', 0);
+insert into todos (description, completed) values ('Finish homework', 0);
 
-INSERT INTO todos (description, completed) VALUES ('Go to the store', 0);
+insert into todos (description, completed) values ('Go to the store', 0);
 
-INSERT INTO todos (description, completed) VALUES ('Learn Spanish', 0);
+insert into todos (description, completed) values ('Learn Spanish', 0);
 
 

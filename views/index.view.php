@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Tasks</title>
 </head>
 <body>
+
+	<nav>
+
+		<ul>
+
+			<a href="http://localhost/my-mvc-framework/about">About Page</a> |
+
+			<a href="http://localhost/my-mvc-framework/contact">Contact Page</a> |
+
+			<a href="http://localhost/my-mvc-framework/about-culture">About Culture Page</a>
+			
+		</ul>
+
+	</nav>
 
 	<center><h1>Tasks</h1></center>
 
