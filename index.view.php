@@ -5,7 +5,8 @@
 </head>
 <body>
 
-	<h1>Tasks</h1>
+	<center><h1>Tasks</h1></center>
+
 	<div>
 		<ul>
 			<?php foreach ($tasks as $key => $task): ?>
