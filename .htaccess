@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /my-mvc-framework/
+RewriteRule ^.*$ index.php [END]
