@@ -13,6 +13,4 @@ require 'core/database/Connection.php';
 require 'core/Request.php';
 
 
-
-
 $app['database'] = new QueryBuilder(Connection::make($app['config']['database']));

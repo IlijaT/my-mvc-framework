@@ -1,26 +1,21 @@
-<?php require('partials/head.php') ?>
+<?php
 
-	<center><h1>Tasks</h1></center>
+require('partials/head.php') ?>
 
-	<div>
-		<ul>
-			<?php foreach ($tasks as $key => $task): ?>
+<div class="container">
 
-				 <li> 
-					<?php if ($task->completed): ?>	
+	<center><h1>Submit your name</h1></center>
 
-						<strike> <?= $task->description ?> </strike>
+	<form method="POST" action="names">
 
-					<?php else: ?>
+		<input type="text" name="name">
 
-				 	<?= $task->description ?>
+		<button type="submit">Submit</button>
 
-				 <?php endif; ?>
-				 	
+	</form>
+</div>
+	
 
-				 </li> 
-			<?php endforeach ?>
-		</ul>
-	</div>
+ 
 
 <?php require('partials/footer.php') ?>
