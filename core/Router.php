@@ -5,14 +5,28 @@ class Router
 
 {
 
-    protected $routes = [];
+    public $routes = [
+
+        'GET' => [],
+
+        'POST' => []
+    ];
 
 
-    public function define($routes) 
+    public function get($uri, $controller) 
 
     {
 
-        $this->routes = $routes;
+        $this->routes['GET'][$uri] = $controller;
+
+    }
+
+    
+    public function post($uri, $controller) 
+
+    {
+
+        $this->routes['POST'][$uri] = $controller;
 
     }
 
@@ -30,15 +44,13 @@ class Router
     }
 
 
-    public function direct($uri) 
+    public function direct($uri, $requestType) 
 
     {
 
-        //die(var_dump($uri));
-
-        if (array_key_exists($uri, $this->routes)) {
+        if (array_key_exists($uri, $this->routes[$requestType])) {
             
-           return $this->routes[$uri];
+           return $this->routes[$requestType][$uri];
 
         }
 
