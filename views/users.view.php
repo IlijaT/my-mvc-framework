@@ -4,9 +4,9 @@ require('partials/head.php') ?>
 
 <div class="container">
 
-	<center><h1>Home Page </h1></center>	
+	<center><h1>Users</h1></center>	
 
-	<!-- <?php foreach ($users as $user) : ?> 
+	<?php foreach ($users as $user) : ?> 
 
 		<ul >
 		
@@ -17,16 +17,17 @@ require('partials/head.php') ?>
 
 	<?php endforeach; ?> 
 
+    <hr>
 
-	<center><h1>Submit your name</h1></center>
+	<h3>Submit your name</h3>
 
-	<form class="form" method="POST" action="names">
+	<form class="form" method="POST" action="users">
 
 		<input type="text" name="name">
 
 		<button type="submit">Submit</button>
 
-	</form> -->
+	</form>
 </div>
 	
 
