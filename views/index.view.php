@@ -4,9 +4,21 @@ require('partials/head.php') ?>
 
 <div class="container">
 
+	<?php foreach ($users as $user) : ?> 
+
+		<ul >
+		
+			<li> <?= $user->name ?> </li>
+
+		</ul>
+
+
+	<?php endforeach; ?> 
+
+
 	<center><h1>Submit your name</h1></center>
 
-	<form method="POST" action="names">
+	<form class="form" method="POST" action="names">
 
 		<input type="text" name="name">
 
