@@ -9,6 +9,7 @@ class Request
     {
 
         $dir = dirname($_SERVER['PHP_SELF']);
+        
         return trim(
             substr(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), 
             strlen($dir) 
