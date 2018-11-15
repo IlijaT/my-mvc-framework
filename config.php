@@ -8,7 +8,7 @@ return [
 
         'username' => 'root',
 
-        'password' => 'root',
+        'password' => '',
 
         'connection' => 'mysql:host=127.0.0.1',
 

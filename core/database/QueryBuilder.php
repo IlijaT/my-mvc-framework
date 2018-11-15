@@ -52,12 +52,33 @@ class QueryBuilder
             $statement->execute($parameters);
 
         } catch(Exception $e) {
+
             die('Something went wrong!');
+
         }
 
+    }
 
 
+    public function delete($table, $parameters)
+
+    {
         
+        $sql = sprintf('delete from %s where id = :id',
+            $table);
+
+        try {
+            
+            $statement = $this->pdo->prepare($sql);
+
+            $statement->execute([':id' => $parameters]);
+
+
+        } catch(Exception $e) {
+
+            die('Something went wrong!');
+
+        }
 
     }
 

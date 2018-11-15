@@ -10,7 +10,23 @@ require('partials/head.php') ?>
 
 		<ul >
 		
-			<li> <?= $user->name ?> </li>
+			<li>
+		 
+				<div class="input-group">
+
+					<?= $user->name ?> &nbsp | &nbsp
+
+					<form action="users/<?= $user->id?>" method="POST">
+
+						<input name="_method" type="hidden" value="delete" />
+
+						<span class="input-group-btn"><button class="btn btn-dark btn-sm">Delete</button> </span>
+
+					</form>
+					 
+				</div>
+
+			</li>
 
 		</ul>
 
