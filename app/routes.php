@@ -10,6 +10,6 @@ $router->get('users', 'UsersController@index');
 $router->post('users', 'UsersController@store');
 
 
-$router->post('names', 'controllers/add-name.php');
+$router->delete('users/{id}', 'UsersController@destroy');
 
 

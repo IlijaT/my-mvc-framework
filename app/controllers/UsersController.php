@@ -33,4 +33,14 @@ class UsersController {
 
     }
 
+
+    public function destroy($id) {
+
+       
+        $deletedUser = App::get('database')->delete('users', $id);
+
+        return redirect('users');
+
+    }
+
 }
